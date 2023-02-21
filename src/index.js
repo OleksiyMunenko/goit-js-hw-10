@@ -30,11 +30,11 @@ function getCountry(evt) {
       } else if (data.length === 1) {
         cleanMarkup();
         sortLanguagesToArray(data);
-        //перебирает массив языков и возвращает массив нормальных названий языков (не официальных)
+        
         let stringOfCountryLanguages = arrayOfCountryLanguages.join(', ');
         createLongMarkup(data, stringOfCountryLanguages);
         arrayOfCountryLanguages = [];
-        // каждый раз после ввода в инпут страны которая возвращает один элемент очищает массив стран, тем самым languages не повторяются после каждого повторного ввода страны которая соответствует условию
+       
       }
     })
     .catch(error => {
